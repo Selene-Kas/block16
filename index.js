@@ -80,10 +80,6 @@ function calculateAllInventoryPrice() {
  */
 function getItemPriceByName(name) {
   // TODO: Use your knowledge of objects and arrays to get the price of the item passed in
-  /*items.forEach((item, idx)=> {
-    if (item.name === name)
-    console.log(item.price);
-  });*/
   for(let i = 0; i < items.length; i++) {
     //const current = items[i];
     if (items[i].name === name) {
@@ -104,9 +100,6 @@ function filterItemsByCategoryId(categoryId) {
 
 function logCartItems() {
   // TODO: Loop through your cart and use the indexes to log the names of all items in your cart
-  /*cart.forEach((item, idx)=> {
-    console.log(item.name);
-  });*/
   for (let i = 0; i < cart.length; i++) {
     console.log(cart[i].name);
   }
@@ -117,12 +110,6 @@ function logCartItems() {
  */
 function calculateTotalCartPrice() {
   // TODO: Loop through your cart and return the total price of all items in your cart
-  /*const initialValue = 0;
-  const cartSum = cart.reduce(
-    (acc, item) => acc + item.price, 
-    initialValue
-  );
-  return(cartSum);*/
   let sum = 0;
   for (let i = 0; i < cart.length; i++) {
     sum = sum + cart[i].price;
